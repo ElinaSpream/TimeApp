@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9E8DD"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="150sp"
+        android:textSize="25sp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is your name?"
+        />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Button
+        android:layout_marginTop="30sp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/btnName"
+
+        android:onClick="updateText"
+        />
+
+    <TextView
+        android:layout_marginTop="100sp"
+        android:textSize="25sp"
+        android:id="@+id/getDateAndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you want to know the time?"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_below="@+id/getDateAndTime"
+        android:id="@+id/btnTime"
+        android:text="Get Date and Time">
+
+    </Button>
+
+
+
+
+</LinearLayout>
